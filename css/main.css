@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+}
+
+body {
+  font-family: 'Montserrat Regular';
+  color: black;
+  background-color: white;
+  font-size: 20px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+b {
+  font-family: 'Montserrat Bold';
+}
+
+.hero-image {
+  background-image: linear-gradient(135deg, rgba(181, 104, 238, 0.3), rgba(57, 25, 116, 0.6)), url("../img/h1.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* .hero-image .homeshot1 img{
+  position: absolute;
+  float: left;
+  top: 200px;
+  left: 20%;
+} */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container>div {
+  /* background-color: black; */
+  width: 30%;
+  margin-top: 5%;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-text {
+  text-align: left;
+  margin-top: 50%;
+  color: white;
+}
