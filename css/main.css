@@ -8,6 +8,16 @@
   src: url('../fonts/Montserrat-Bold.otf') format('opentype');
 }
 
+/* Link */
+a {
+  font-family: 'Montserrat Thin';
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
 body {
   font-family: 'Montserrat Regular';
   color: black;
@@ -73,6 +83,7 @@ b {
   font-family: 'Montserrat Bold';
   border-left: 1px solid white;
   border-right: 1px solid white;
+  opacity: 1;
 }
 
 /* Add a weight to the active/current link */
@@ -152,7 +163,7 @@ b {
 .flex-container>div {
   /* background-color: black; */
   width: 30%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   text-align: center;
   line-height: 30px;
   font-size: 30px;
@@ -165,6 +176,7 @@ b {
 }
 
 .content{
+  padding-bottom: 3em;
 
 }
 
@@ -185,4 +197,90 @@ b {
   justify-content: center;
   text-align: center;
   line-height: 0.6em;
+  color: #757575;
+}
+
+.team-card h3{
+  color: #673AB7;
+}
+
+.page-margin {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #5E3EAB;
+  color: white;
+  margin-top: 0 em;
+  left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  text-align: left;
+}
+
+.footer .context {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* desktop */
+@media screen and (min-width: 600px) {
+  .footer .logo {
+    text-align: left;
+  }
+
+  .footer .left {
+    text-align: left;
+  }
+
+  .footer .right {
+    text-align: right;
+  }
+
+  .footer .flex-container>div {
+    /* width: 1000px; */
+    /* margin: 10px; */
+    text-align: left;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat Regular';
+    width: 45%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .footer {
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 3em;
+  }
+
+  .footer .logo {
+    text-align: center;
+  }
+
+  .footer .right {
+    text-align: center;
+  }
+
+  .footer .left {
+    text-align: center;
+  }
+
+  .footer .flex-container>div {
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat Regular';
+  }
+}
+
+.footer a {
+  color: white;
+  font-family: 'Montserrat Regular';
+  text-decoration: none;
 }
