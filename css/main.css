@@ -13,6 +13,7 @@ body {
   color: black;
   background-color: white;
   font-size: 20px;
+  letter-spacing: 0.05em;
 }
 
 body, html {
@@ -51,7 +52,7 @@ b {
 
 .topnav nav ul li {
   display: inline-block;
-  width: 200px;
+  width: 150px;
 }
 
 /* Style the links inside the navigation bar */
@@ -163,6 +164,25 @@ b {
   color: white;
 }
 
-.box1{
-  padding: 20%;
+.content{
+
+}
+
+.title {
+  font-family: 'Montserrat Bold';
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.team-page img{
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.team-card{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 0.6em;
 }
